@@ -10,7 +10,7 @@ function PlantCard({ plant, onUpdatePlant }) {
     <li className="card" data-testid="plant-item">
       <img src={plant.image} alt={plant.name} />
       <h4>{plant.name}</h4>
-      <p>Price: ${plant.price}</p>
+      <p>Price: {plant.price}</p>
 
       {plant.soldOut ? (
         <button onClick={handleStockClick}>Out of Stock</button>
